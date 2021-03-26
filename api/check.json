@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "authorization": "/^Bearer eyJhbGci/",
+    "_exclude_authorization": [
+      "/",
+      "/admin/brick/login",
+      "/admin/captcha",
+      "/admin/tenant/list",
+      "/test",
+      "/test/a"
+    ],
+    "host": ["localhost:9998", "localhost:9999"],
+    "_failed_user-agent": "401",
+    "_failed": "404"
+  }
+}

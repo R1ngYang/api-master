@@ -1,16 +1,17 @@
 {
   "headers": {
-    "authorization": "/^Bearer eyJhbGci/",
+    "authorization": "()=> 'Bearer '+ $.token",
     "_exclude_authorization": [
       "/",
       "/admin/brick/login",
       "/admin/captcha",
       "/admin/tenant/list",
       "/test",
-      "/test/a"
+      "/test/a",
+      "/admin/tenant/options"
     ],
     "host": ["localhost:9998", "localhost:9999"],
-    "_failed_user-agent": "401",
+    "_failed_authorization": "401",
     "_failed": "404"
   }
 }

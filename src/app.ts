@@ -7,12 +7,14 @@ const app = new koa();
 app.use(bodyParser());
 app.use(async (ctx: Context) => {
   const result = check(ctx);
-  const json = readJson(`/${ctx.path}/${result}`);
-  if (json) {
-    ctx.body = json;
-  } else {
-    const json404 = readJson('/404');
-    ctx.body = json404;
-  }
+  ctx.body =
+    readJson(`/${ctx.path}/${result}`) ||
+    readJson(`/${result}`) ||
+    readJson('/404') ||
+    404;
 });
 app.listen(9999);
+
+console.log('start success\n');
+console.log('> Local:    http://localhost:9999/');
+console.log('> Network:  http://10.1.11.126:9999/');

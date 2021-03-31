@@ -7,7 +7,7 @@
       "/admin/captcha",
       "/admin/tenant/list",
       "/test",
-      "/test/a",
+      "/test/test_a",
       "/admin/tenant/options"
     ],
     "host": ["localhost:9998", "localhost:9999"],

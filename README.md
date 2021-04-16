@@ -10,6 +10,12 @@
 npm run start
 ```
 
+## 编译
+
+```
+npm run build
+```
+
 ## 编译启动
 
 ```

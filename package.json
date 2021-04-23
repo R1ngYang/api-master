@@ -15,7 +15,7 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "start": "node ./esbuild.js & nodemon ./dist/app.js --api ./api localhost 9999",
+    "start": "node ./esbuild.js & nodemon ./dist/app.js --api ./api localhost 8888",
     "build": "esbuild ./src/app.ts --bundle --log-level=error --platform=node --outfile=dist/app.js"
   },
   "keywords": [],
